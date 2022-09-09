@@ -4,7 +4,6 @@
 /**
  * main - Prints a text according numbeir
  *Return: Always (Success)
-
  */
 int main(void)
 {
