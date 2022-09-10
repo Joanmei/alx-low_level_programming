@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -27,4 +28,34 @@ j = 49 + u;
 }
 putchar('\n');
 return (0);
+=======
+#include <stdio.h>
+
+/**
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
+ */
+int main(void)
+{
+	int n, m;
+/**/
+	for (n = 48; n <= 56; n++)
+	{
+		for (m = 49; m <= 57; m++)
+		{
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+>>>>>>> f4f33b6e2f85f12a423041d972c3cf15cc0d322d
 }
