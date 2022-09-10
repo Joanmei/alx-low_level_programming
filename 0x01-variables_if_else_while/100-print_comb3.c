@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -29,31 +30,37 @@ j = 49 + u;
 putchar('\n');
 return (0);
 =======
+=======
+#include <stdlib.h>
+>>>>>>> 15fc6e5917f1636eecb8d9a3f9680250841ae1ea
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two digits
- * Return: ALways 0 (Success)
+ * main - the function main use printf to print numbers
+ *
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 {
-	int n, m;
-/**/
-	for (n = 48; n <= 56; n++)
+	int i;
+	int u = 0;
+	int j = 49;
+
+	for (i = 48; i <= 56; ++i)
 	{
-		for (m = 49; m <= 57; m++)
+		for (; j <= 57; ++j)
 		{
-			if (m > n)
+
+			putchar(i);
+			putchar(j);
+			if (i != 56 || j != 57)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
+		u++;
+		j = 49 + u;
 	}
 	putchar('\n');
 	return (0);
