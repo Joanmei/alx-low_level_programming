@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-char c[] = "_putchar";
-int i;
-for (i = 0; i < 9; i++)
+char *sh = "_putchar";
+while (*sh)
 {
-putchar(c[i]);
+putchar(*sh);
+sh++;
 }
 putchar('\n');
 return (0);
